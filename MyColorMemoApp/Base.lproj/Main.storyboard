@@ -24,6 +24,21 @@
             </objects>
             <point key="canvasLocation" x="-843" y="69"/>
         </scene>
+        <!--Memo Detail View Controller-->
+        <scene sceneID="o59-gw-Npk">
+            <objects>
+                <viewController id="jKz-Jr-G7s" customClass="MemoDetailViewController" customModule="MyColorMemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIl-qt-Vt6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SnC-0F-uJy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doM-p3-ta4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="734"/>
+        </scene>
         <!--Home View Controllere-->
         <scene sceneID="tne-QT-ifu">
             <objects>

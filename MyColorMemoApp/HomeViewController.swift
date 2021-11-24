@@ -16,6 +16,7 @@ class HomeViewControllere: UIViewController {
     override func viewDidLoad() {
         
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView()
         setMemoData()
     }
@@ -39,5 +40,11 @@ extension HomeViewControllere: UITableViewDataSource {
         cell.textLabel?.text = memoDataModel.text
         cell.detailTextLabel?.text = "\(memoDataModel.recordDate)"
         return cell
+    }
+}
+
+extension HomeViewControllere: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("index番号は\(indexPath.row)です!")
     }
 }
