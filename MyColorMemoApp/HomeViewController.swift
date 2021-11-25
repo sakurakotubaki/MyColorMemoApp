@@ -48,6 +48,8 @@ extension HomeViewControllere: UITableViewDelegate {
         let storyboad = UIStoryboard(name: "Main", bundle: nil)
         let memoDatailViewController = storyboad.instantiateViewController(identifier: "MemoDetailViewController") as!
         MemoDetailViewController
+        let memoData = memoDataList[indexPath.row]
+        memoDatailViewController.configure(memo: memoData)
         tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.pushViewController(memoDatailViewController, animated: true)
     }
