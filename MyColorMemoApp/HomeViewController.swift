@@ -45,6 +45,10 @@ extension HomeViewControllere: UITableViewDataSource {
 
 extension HomeViewControllere: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("index番号は\(indexPath.row)です!")
+        let storyboad = UIStoryboard(name: "Main", bundle: nil)
+        let memoDatailViewController = storyboad.instantiateViewController(identifier: "MemoDetailViewController") as!
+        MemoDetailViewController
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(memoDatailViewController, animated: true)
     }
 }
