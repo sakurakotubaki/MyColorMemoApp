@@ -31,7 +31,7 @@ class HomeViewControllere: UIViewController {
     
     @objc func tapAddButton() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let memoDetailViewController = storyboard.instantiateViewController(identifier: "MemoDeatilViewControlleer") as!
+        let memoDetailViewController = storyboard.instantiateViewController(identifier: "MemoDetailViewController") as!
         MemoDetailViewController
         navigationController?.pushViewController(memoDetailViewController, animated: true)
     }
