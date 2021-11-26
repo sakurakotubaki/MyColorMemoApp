@@ -22,6 +22,7 @@ class MemoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         displayData()
+        setDoneButton()
     }
     
     func configure(memo: MemoDataModel) {
